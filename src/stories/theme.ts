@@ -53,7 +53,3 @@ export const theme = createTheme({
     customShadows: [
         "none", '0px 0px 0px 2px']
 });
-
-
-
-

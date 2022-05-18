@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardActionArea, Checkbox, FormControlLabel, CardContent, CardMedia, ThemeProvider } from '@mui/material';
 import ImageMap from './assets/CardMedia.png';
-import './layerCard.css';
 import { theme } from './theme';
 
 interface LayerCardProps {
@@ -17,7 +16,6 @@ export const LayerCard: React.FunctionComponent<LayerCardProps> = (props) => {
         setChecked(event.target.checked);
         setActive(event.target.checked);
     };
-    console.log('props.active = ', props.active);
 
     React.useEffect(() => {
         setChecked(props.checked);
